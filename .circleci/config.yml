@@ -1,0 +1,23 @@
+version: 2.1
+jobs:
+  compile:
+   docker:
+      - image: ubuntu:18.04
+   steps:
+      - run:
+          command: |
+           apt-get -y update && apt-get -y upgrade && apt-get -y install sudo && apt-get -y install curl libxml-simple-perl apt-utils texinfo unzip w3m xsltproc zip zlib1g-dev lzip pngquant python2.7 python-all-dev re2c schedtool squashfs-tools subversion maven ncftp ncurses-dev patch patchelf pkg-config pngcrush libsdl1.2-dev libssl-dev libtool libxml2 libxml2-utils lzop libmpc-dev libmpfr-dev libncurses5-dev libexpat1-dev libgmp-dev htop imagemagick lib32ncurses5-dev lib32z1-dev libtinfo5 libc6-dev libcap-dev g++-multilib gawk gcc gcc-multilib git gnupg gperf ccache clang cmake expat fastboot flex g++ adb autoconf automake axel bc bison build-essential rsync wget
+           apt-get -y install openjdk-8-jre
+           apt-get -y install openjdk-8-jdk
+           wget https://raw.githubusercontent.com/ItsVixano/android_device_mobvoi_mooneye/omni-8.0/.circleci/repo.sh
+           source repo.sh
+           git config --global user.name "ItsVixano"
+           git config --global user.email "vixanonew@gmail.com"
+           git config --global color.ui false
+           wget https://raw.githubusercontent.com/ItsVixano/android_device_mobvoi_mooneye/omni-8.0/.circleci/twrp_ci.sh
+           source twrp_ci.sh
+workflows:
+  version: 2.1
+  cooking:
+    jobs:
+      - compile
