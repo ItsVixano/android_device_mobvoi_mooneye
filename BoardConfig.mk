@@ -27,6 +27,9 @@ TARGET_CPU_VARIANT := cortex-a7
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
 
+# SECCOMP
+BOARD_SECCOMP_POLICY += $(DEVICE_PATH)/seccomp_policy
+
 # Security patch level
 VENDOR_SECURITY_PATCH := 2018-04-05
 
