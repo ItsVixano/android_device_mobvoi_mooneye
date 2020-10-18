@@ -15,5 +15,21 @@
 
 DEVICE_PATH := device/mobvoi/mooneye
 
+# Audio
+PRODUCT_PACKAGES += \
+    android.hardware.audio@2.0-impl \
+    android.hardware.audio@2.0-service \
+    android.hardware.audio.effect@2.0-impl
+
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/configs/audio/audio_effects.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/audio_effects.conf \
+    $(DEVICE_PATH)/configs/audio/audio_policy.conf$(TARGET_COPY_OUT_SYSTEM)/etc/audio_policy.conf
+
+
+# Media
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/configs/media/media_codecs.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/media_codecs.xml \
+    $(DEVICE_PATH)/configs/media/media_profiles_V1_0.dtd:$(TARGET_COPY_OUT_SYSTEM)/etc/media_profiles-V1_0.dtd
+
 # System Properties
 $(call inherit-product, device/mobvoi/mooneye/system_prop.mk)
