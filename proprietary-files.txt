@@ -1,0 +1,136 @@
+# mooneye-user 8.0.0 OWDR.180307.010 4736830 release-keys
+
+# Audio
+system/vendor/lib/libaudiocomponentengine.so
+
+# Audio-Hardware
+system/vendor/lib/hw/audio.primary.default.so
+system/vendor/lib/hw/audio.primary.mt2601.so
+system/vendor/lib/hw/audio_policy.stub.so
+
+# Bluetooth
+system/vendor/lib/hw/android.hardware.bluetooth@1.0-impl.so
+system/vendor/lib/libbluetoothem_mtk.so
+system/vendor/lib/libbluetooth_mtk.so
+system/vendor/lib/libbluetooth_mtk_pure.so
+system/vendor/lib/libbluetooth_relayer.so
+system/vendor/lib/libbt-vendor.so
+
+# Camera
+
+# DRM
+
+# DRM-Widevine
+system/vendor/lib/mediadrm/libdrmclearkeyplugin.so
+
+# Display-Hardware
+system/vendor/lib/hw/android.hardware.graphics.mapper@2.0-impl.so
+system/vendor/lib/hw/gralloc.default.so
+system/vendor/lib/hw/gralloc.mt2601.so
+system/vendor/lib/hw/hwcomposer.mt2601.so
+system/vendor/lib/hw/memtrack.default.so
+
+# Firmware
+system/etc/firmware/mt6630_ant_m1.cfg
+system/etc/firmware/mt6630_patch_e1_hdr.bin
+system/etc/firmware/mt6630_patch_e2_hdr.bin
+system/etc/firmware/mt6630_patch_e3_0_hdr.bin
+system/etc/firmware/mt6630_patch_e3_1_hdr.bin
+system/etc/firmware/WIFI_RAM_CODE_MT6630
+system/etc/firmware/WIFI_RAM_CODE_SOC
+system/etc/firmware/WMT.cfg
+system/vendor/firmware/0501.fw
+system/vendor/firmware/Cywee.hex
+system/vendor/firmware/tp_k_g_mooneye.raw
+
+# GPS
+system/vendor/lib/hw/android.hardware.gnss@1.0-impl.so
+
+# GPS-Hardware
+
+# Graphics
+system/vendor/lib/egl/libEGL_mali.so
+system/vendor/lib/egl/libGLESv1_CM_mali.so
+system/vendor/lib/egl/libGLESv2_mali.so
+
+# Keymaster
+system/vendor/lib/hw/android.hardware.keymaster@3.0-impl.so
+
+# Keystore
+system/vendor/lib/libkeystore-engine-wifi-hidl.so
+system/vendor/lib/libkeystore-wifi-hidl.so
+
+# Listen
+
+# Media
+
+# Media-Hardware
+
+# Mediatek
+system/vendor/lib/libmtk_drvb.so
+system/vendor/lib/libmtk_mali_user.so
+
+# Perf
+
+# Postprocessing
+
+# Power-Hardware
+system/vendor/lib/hw/android.hardware.power@1.0-impl.so
+system/vendor/lib/hw/power.default.so
+
+# QMI
+
+# Radio
+
+# Sensors
+system/vendor/lib/hw/sensors.cywee.so
+
+# Thermal
+system/system/vendor/bin/thermal_manager
+system/vendor/etc/init/thermal_manager.rc
+
+# Time
+
+# Vibrator
+system/vendor/lib/hw/android.hardware.vibrator@1.0-impl.so
+system/vendor/lib/hw/vibrator.default.so
+
+# WiFi
+
+# Misc
+system/vendor/bin/6620_launcher
+system/vendor/bin/6620_wmt_concurrency
+system/vendor/bin/6620_wmt_lpbk
+system/vendor/bin/factory
+system/vendor/bin/hw/rild
+system/vendor/bin/meta_tst
+system/vendor/bin/mnld
+system/vendor/bin/nvram_daemon
+system/vendor/bin/stp_dump3
+system/vendor/bin/wlan_assistant
+system/vendor/bin/wmt_loader
+system/vendor/compatibility_matrix.xml
+system/vendor/etc/factory.ini
+system/vendor/etc/init/6620_launcher.rc
+system/vendor/etc/init/mnld.rc
+system/vendor/etc/init/nvram_daemon.rc
+system/vendor/etc/init/rild.rc
+system/vendor/etc/init/sensorhub.rc
+system/vendor/etc/init/stp_dump3.rc
+system/vendor/etc/init/wlan_assistant.rc
+system/vendor/etc/init/wmt_loader.rc
+system/vendor/lib/libbessound_hd_mtk.so
+system/vendor/lib/libcustom_nvram.so
+system/vendor/lib/libcvsd_mtk.so
+system/vendor/lib/libdpframework.so
+system/vendor/lib/libfft.so
+system/vendor/lib/libfile_op.so
+system/vendor/lib/libgralloc_extra.so
+system/vendor/lib/libion_mtk.so
+system/vendor/lib/libMali.so
+system/vendor/lib/libmnl.so
+system/vendor/lib/libmsbc_mtk.so
+system/vendor/lib/libnvram.so
+system/vendor/lib/libnvram_daemon_callback.so
+system/vendor/lib/libnvram_platform.so
+system/vendor/lib/libwifi-hal.so
